@@ -1,24 +1,41 @@
-# README
+# Message me rails 5 application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the Message Me application for
+[*The Complete Ruby on Rails tutorial*](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/).
 
-Things you may want to cover:
+## Information
 
-* Ruby version
+Message me is a small app build for learning purposes. I implemented real time functionality via Action Cable,
+and it is extremely valuable experience for me.
 
-* System dependencies
+Checkout the app on heroku [Message Me](https://message-me-rails5.herokuapp.com/)
 
-* Configuration
+## Getting started
 
-* Database creation
+To get started with the app, clone the repo and then install the needed gems:
 
-* Database initialization
+```
+$ bundle install --without production
+```
 
-* How to run the test suite
+Next, migrate the database:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails db:migrate
+```
 
-* Deployment instructions
+And
 
-* ...
+```
+$ rails db:seed
+```
+
+(THERE IS NO SIGNUP FUNCTIONALITY, USE USERS FROM SEEDS)
+
+
+```
+$ rails server
+```
+
+For more information, see the
+[*Complete Ruby on Rails Tutorial* book](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/).
